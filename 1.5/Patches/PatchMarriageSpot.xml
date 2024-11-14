@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="MarriageSpot"]/graphicData/shaderType</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="MarriageSpot"]/graphicData/shaderType</xpath>
+          <value>
+            <shaderType>Transparent</shaderType>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="MarriageSpot"]/graphicData</xpath>
+          <value>
+            <shaderType>Transparent</shaderType>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="MarriageSpot"]/comps</xpath>
+        <match Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="MarriageSpot"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="MarriageSpot"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]</xpath>
+            <value>
+              <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+                <startAsRandom>false</startAsRandom>
+                <disableRandomButton>true</disableRandomButton>
+                <randomGraphics>
+                  <li>Things/Building/Misc/MarriageSpot</li>
+                  <li>Things/Building/Misc/MarriageSpot-Pr-2x1</li>
+                  <li>Things/Building/Misc/TranslucentSquare-2x1</li>
+                  <li>Things/Building/Misc/TranslucentHeart-2x1</li>
+                  <li>Things/Building/Misc/FullyTransparent</li>
+                </randomGraphics>
+              </li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="MarriageSpot"]/comps</xpath>
+            <value>
+              <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+                <startAsRandom>false</startAsRandom>
+                <disableRandomButton>true</disableRandomButton>
+                <randomGraphics>
+                  <li>Things/Building/Misc/MarriageSpot</li>
+                  <li>Things/Building/Misc/MarriageSpot-Pr-2x1</li>
+                  <li>Things/Building/Misc/TranslucentSquare-2x1</li>
+                  <li>Things/Building/Misc/TranslucentHeart-2x1</li>
+                  <li>Things/Building/Misc/FullyTransparent</li>
+                </randomGraphics>
+              </li>
+            </value>
+          </nomatch>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="MarriageSpot"]</xpath>
+          <value>
+            <comps>
+              <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+                <startAsRandom>false</startAsRandom>
+                <disableRandomButton>true</disableRandomButton>
+                <randomGraphics>
+                  <li>Things/Building/Misc/MarriageSpot</li>
+                  <li>Things/Building/Misc/MarriageSpot-Pr-2x1</li>
+                  <li>Things/Building/Misc/TranslucentSquare-2x1</li>
+                  <li>Things/Building/Misc/TranslucentHeart-2x1</li>
+                  <li>Things/Building/Misc/FullyTransparent</li>
+                </randomGraphics>
+              </li>
+            </comps>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MarriageSpot"]//*[self::altitudeLayer or self::clearBuildingArea or self::isEdifice]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MarriageSpot"]</xpath>
+    <value>
+      <clearBuildingArea>false</clearBuildingArea>
+      <altitudeLayer>BuildingOnTop</altitudeLayer>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="MarriageSpot"]/building</xpath>
+    <value>
+      <isEdifice>false</isEdifice>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Inglix.WiderMarriageSpot>Wider Marriage Spot</Inglix.WiderMarriageSpot>
+  <Inglix.ShareCenterCellDuringMarriageCeremony>Pawns will share the center cell of marriage spots with odd-numbered width</Inglix.ShareCenterCellDuringMarriageCeremony>
+  <Inglix.ShareCenterCellTooltip>This appears to work fine during testing, however the original game code specifically tries to prevent this, possibly for good reason. Use with caution and report any issues.</Inglix.ShareCenterCellTooltip>
+</LanguageData>

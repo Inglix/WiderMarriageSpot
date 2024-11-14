@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetadata>
+	<name>Wider Marriage Spot</name>
+	<author>Inglix</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>Inglix.WiderMarriageSpot</packageId>
+	<modDependencies>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+    <li>oskarpotocki.vanillafactionsexpanded.core</li>
+    <li>owlchemist.barelybetterspots</li>
+	</loadAfter>
+	<description>Adds proper support for marriage spots wider than 2x1 cells.</description>
+</ModMetadata>
