@@ -1,5 +1,0 @@
-D:\Games\Steam\steamapps\common\RimWorld\Mods\BiggerMarriageSpots\1.5\Assemblies\BiggerMarriageSpots.dll
-D:\Games\Steam\steamapps\common\RimWorld\Mods\BiggerMarriageSpots\Source\BiggerMarriageSpots\obj\Debug\BiggerMarriageSpots.csproj.AssemblyReference.cache
-D:\Games\Steam\steamapps\common\RimWorld\Mods\BiggerMarriageSpots\Source\BiggerMarriageSpots\obj\Debug\BiggerMarriageSpots.csproj.CoreCompileInputs.cache
-D:\Games\Steam\steamapps\common\RimWorld\Mods\BiggerMarriageSpots\Source\BiggerMarriageSpots\obj\Debug\BiggerMa.F124A04E.Up2Date
-D:\Games\Steam\steamapps\common\RimWorld\Mods\BiggerMarriageSpots\Source\BiggerMarriageSpots\obj\Debug\BiggerMarriageSpots.dll

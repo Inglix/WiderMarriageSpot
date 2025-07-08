@@ -1,0 +1,30 @@
+# Ignore DDS texture files
+*.dds
+
+# Ignore build output and temporary files
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userprefs
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+*.csproj.nuget.dgspec.json
+*.nuget.cache
+*.Up2Date
+*.AssemblyReference.cache
+*.CoreCompileInputs.cache
+*.FileListAbsolute.txt
+*.project.assets.json
+*.rider.project.model.nuget.info
+*.rider.project.restore.info
+
+# Ignore Rider and VSCode settings
+.idea/
+.vscode/
+*.DotSettings.user
+
+# Ignore other common files
+*.log
+*.tmp
+*.bak

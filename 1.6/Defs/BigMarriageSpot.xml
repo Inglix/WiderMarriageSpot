@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>MarriageSpots</defName>
+    <label>wide marriage spot</label>
+  </DesignatorDropdownGroupDef>
+
+  <ThingDef Abstract="True" Name="BigMarriageSpotBase" ParentName="BuildingBase">
+    <description>Designates a spot where marriage ceremonies will take place. Spectators can watch from either side.</description>
+    <thingClass>Building_MarriageSpot</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <clearBuildingArea>false</clearBuildingArea>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <useHitPoints>False</useHitPoints>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <designationCategory>Misc</designationCategory>
+    <designatorDropdown>MarriageSpots</designatorDropdown>
+    <uiOrder>2000</uiOrder>
+    <passability>Standable</passability>
+    <building>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <isEdifice>false</isEdifice>
+    </building>
+    <designationHotKey>Misc10</designationHotKey>
+    <ritualFocus>
+      <spectateDistance>2</spectateDistance>
+      <allowedSpectateSides>Down</allowedSpectateSides>
+    </ritualFocus>
+    <placeWorkers>
+      <li>PlaceWorker_SpectatorPreview</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>True</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <ThingDef ParentName="BigMarriageSpotBase">
+    <defName>Inglix_BigMarriageSpot_3Wide</defName>
+    <label>3x1 marriage spot</label>
+    <graphicData>
+      <texPath>Things/Building/Misc/MarriageSpot-3x1</texPath>
+      <drawSize>(3,1)</drawSize>
+    </graphicData>
+    <size>(3,1)</size>
+    <comps>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+        <startAsRandom>false</startAsRandom>
+        <disableRandomButton>true</disableRandomButton>
+        <randomGraphics>
+          <li>Things/Building/Misc/MarriageSpot-3x1</li>
+          <li>Things/Building/Misc/MarriageSpot-Pr-3x1</li>
+          <li>Things/Building/Misc/TranslucentSquare-3x1</li>
+          <li>Things/Building/Misc/TranslucentHeart-3x1</li>
+          <li>Things/Building/Misc/FullyTransparent</li>
+        </randomGraphics>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BigMarriageSpotBase">
+    <defName>Inglix_BigMarriageSpot_4Wide</defName>
+    <label>4x1 marriage spot</label>
+    <graphicData>
+      <texPath>Things/Building/Misc/MarriageSpot-4x1</texPath>
+      <drawSize>(4,1)</drawSize>
+    </graphicData>
+    <size>(4,1)</size>
+    <comps>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+        <startAsRandom>false</startAsRandom>
+        <disableRandomButton>true</disableRandomButton>
+        <randomGraphics>
+          <li>Things/Building/Misc/MarriageSpot-4x1</li>
+          <li>Things/Building/Misc/MarriageSpot-Pr-4x1</li>
+          <li>Things/Building/Misc/TranslucentSquare-4x1</li>
+          <li>Things/Building/Misc/TranslucentHeart-4x1</li>
+          <li>Things/Building/Misc/FullyTransparent</li>
+        </randomGraphics>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BigMarriageSpotBase">
+    <defName>Inglix_BigMarriageSpot_5Wide</defName>
+    <label>5x1 marriage spot</label>
+    <graphicData>
+      <texPath>Things/Building/Misc/MarriageSpot-5x1</texPath>
+      <drawSize>(5,1)</drawSize>
+    </graphicData>
+    <size>(5,1)</size>
+    <comps>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+        <startAsRandom>false</startAsRandom>
+        <disableRandomButton>true</disableRandomButton>
+        <randomGraphics>
+          <li>Things/Building/Misc/MarriageSpot-5x1</li>
+          <li>Things/Building/Misc/MarriageSpot-Pr-5x1</li>
+          <li>Things/Building/Misc/TranslucentSquare-5x1</li>
+          <li>Things/Building/Misc/TranslucentHeart-5x1</li>
+          <li>Things/Building/Misc/FullyTransparent</li>
+        </randomGraphics>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>
